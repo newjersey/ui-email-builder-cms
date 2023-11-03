@@ -9,6 +9,7 @@ export const EmailTemplateComponentsMapping = {
     'SupplementalContent',
     'Directive',
     'LoginDetails',
+    'BenefitAmount',
   ],
   Footer: ['AdditionalContent'],
   Header: ['Title', 'ProgramName', 'DepartmentSeal'],

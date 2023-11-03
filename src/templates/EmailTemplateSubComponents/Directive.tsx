@@ -99,6 +99,7 @@ export const Directive: FC<EmailSubComponentProps> = ({ componentId, id }) => {
             style: [DirectiveVariant.PayOnline].includes(value.variant) ? payOnlineBoxStyles : {},
           },
         ]}
+        onClick={activate}
       >
         {/* Directive Title */}
         {value.showTitle && (
