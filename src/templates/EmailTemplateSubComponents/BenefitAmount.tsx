@@ -3,9 +3,8 @@ import { EmailSubComponentProps } from './shared'
 import { EditableElement } from 'src/ui/EditableElement'
 import { useIsCurrentlyActiveEmailSubComponent } from '../CurrentlyActiveEmailPart'
 import { useEmailPartsContentForSubComponent } from '../EmailPartsContent'
-import { Borders, Colors, Spacing, SpacingCell, StyleDefaults, Text } from '../styles'
+import { Borders, Spacing, SpacingCell, StyleDefaults, Text } from '../styles'
 import { EmailBlock } from 'src/ui/EmailBlock'
-import { WarningIcon } from 'src/ui/WarningIcon'
 import { BoxColor, BoxColorConfigs } from 'src/ui/SelectBoxColor'
 import { UswdsIcon, UswdsIconVariantKey } from 'src/ui/UswdsIcon'
 
@@ -46,7 +45,7 @@ export const useBenefitAmountValue = (componentId: string, id: string) => {
   return useEmailPartsContentForSubComponent(componentId, id, defaultValue)
 }
 
-const { Table, Row, Cell } = EmailBlock
+const { Row, Cell } = EmailBlock
 
 export const BenefitAmount: FC<EmailSubComponentProps> = ({ componentId, id }) => {
   const { activate } = useIsCurrentlyActiveEmailSubComponent(componentId, id)
@@ -120,7 +119,7 @@ export const BenefitAmount: FC<EmailSubComponentProps> = ({ componentId, id }) =
               <Cell>{null}</Cell>
               <Cell align="left" elements={['table']}>
                 <Row>
-                  <Cell >
+                  <Cell>
                     <EditableElement
                       aria-level={5}
                       element="span"
@@ -149,7 +148,9 @@ export const BenefitAmount: FC<EmailSubComponentProps> = ({ componentId, id }) =
                       element="span"
                       value={value.partialWeeklyRateLabel}
                       label="Benefit Amount box title"
-                      onValueChange={(partialWeeklyRateLabel) => setValue({ ...value, partialWeeklyRateLabel })}
+                      onValueChange={(partialWeeklyRateLabel) =>
+                        setValue({ ...value, partialWeeklyRateLabel })
+                      }
                       role="heading"
                       style={{ fontWeight: 'bold' }}
                     />
@@ -159,7 +160,9 @@ export const BenefitAmount: FC<EmailSubComponentProps> = ({ componentId, id }) =
                       element="span"
                       value={value.partialWeeklyRateValue}
                       label="Benefit Amount box title"
-                      onValueChange={(partialWeeklyRateValue) => setValue({ ...value, partialWeeklyRateValue })}
+                      onValueChange={(partialWeeklyRateValue) =>
+                        setValue({ ...value, partialWeeklyRateValue })
+                      }
                       role="heading"
                       style={{ fontWeight: 'bold' }}
                     />
@@ -173,7 +176,6 @@ export const BenefitAmount: FC<EmailSubComponentProps> = ({ componentId, id }) =
                       paddingBottom: Spacing.size.medium,
                     }}
                   >
-                    
                     <EditableElement
                       aria-level={5}
                       element="span"
@@ -192,7 +194,9 @@ export const BenefitAmount: FC<EmailSubComponentProps> = ({ componentId, id }) =
                       element="span"
                       value={value.rateSupportiveInformation}
                       label="Benefit Amount box title"
-                      onValueChange={(rateSupportiveInformation) => setValue({ ...value, rateSupportiveInformation })}
+                      onValueChange={(rateSupportiveInformation) =>
+                        setValue({ ...value, rateSupportiveInformation })
+                      }
                       role="heading"
                       style={{ fontWeight: 'bold' }}
                     />
@@ -212,7 +216,7 @@ export const BenefitAmount: FC<EmailSubComponentProps> = ({ componentId, id }) =
                 setValue({ ...value, benefitSupportiveInformation })
               }
               role="text"
-              style={{paddingTop: Spacing.size.medium, fontStyle: 'italic'}}
+              style={{ paddingTop: Spacing.size.medium, fontStyle: 'italic' }}
             />
           </Row>
         </Row>
