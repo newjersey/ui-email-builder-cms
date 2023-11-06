@@ -124,7 +124,7 @@ export const BenefitAmount: FC<EmailSubComponentProps> = ({ componentId, id }) =
                       aria-level={5}
                       element="span"
                       value={value.weeklyRateLabel}
-                      label="Benefit Amount box title"
+                      label="Benefit Amount weekly rate label"
                       onValueChange={(weeklyRateLabel) => setValue({ ...value, weeklyRateLabel })}
                       role="heading"
                       style={{ fontWeight: 'bold' }}
@@ -134,7 +134,7 @@ export const BenefitAmount: FC<EmailSubComponentProps> = ({ componentId, id }) =
                       aria-level={5}
                       element="span"
                       value={value.weeklyRateValue}
-                      label="Benefit Amount box title"
+                      label="Benefit Amount weekly rate value"
                       onValueChange={(weeklyRateValue) => setValue({ ...value, weeklyRateValue })}
                       role="heading"
                       style={{ fontWeight: 'bold' }}
@@ -147,7 +147,7 @@ export const BenefitAmount: FC<EmailSubComponentProps> = ({ componentId, id }) =
                       aria-level={5}
                       element="span"
                       value={value.partialWeeklyRateLabel}
-                      label="Benefit Amount box title"
+                      label="Benefit Amount partial weekly rate label"
                       onValueChange={(partialWeeklyRateLabel) =>
                         setValue({ ...value, partialWeeklyRateLabel })
                       }
@@ -159,7 +159,7 @@ export const BenefitAmount: FC<EmailSubComponentProps> = ({ componentId, id }) =
                       aria-level={5}
                       element="span"
                       value={value.partialWeeklyRateValue}
-                      label="Benefit Amount box title"
+                      label="Benefit Amount partial weekly rate value"
                       onValueChange={(partialWeeklyRateValue) =>
                         setValue({ ...value, partialWeeklyRateValue })
                       }
@@ -180,7 +180,7 @@ export const BenefitAmount: FC<EmailSubComponentProps> = ({ componentId, id }) =
                       aria-level={5}
                       element="span"
                       value={value.rateExplanation}
-                      label="Benefit Amount box title"
+                      label="Benefit Amount rate explanation"
                       onValueChange={(rateExplanation) => setValue({ ...value, rateExplanation })}
                       role="heading"
                       style={{ fontWeight: 'bold' }}
@@ -193,7 +193,7 @@ export const BenefitAmount: FC<EmailSubComponentProps> = ({ componentId, id }) =
                       aria-level={5}
                       element="span"
                       value={value.rateSupportiveInformation}
-                      label="Benefit Amount box title"
+                      label="Benefit Amount rate supportive information"
                       onValueChange={(rateSupportiveInformation) =>
                         setValue({ ...value, rateSupportiveInformation })
                       }

@@ -13,8 +13,8 @@ components:
     subComponents:
       - kind: Intro
       - kind: Status
-      - kind: BenefitAmount
       - kind: Directive
+      - kind: BenefitAmount
       - kind: SupplementalContent
       - kind: SupplementalContent
       - kind: RulesRightsRegulations
